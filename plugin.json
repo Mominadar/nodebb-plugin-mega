@@ -1,0 +1,16 @@
+{
+    "id": "nodebb-plugin-mega",
+    "name": "Custom Plugin for forum",
+    "description": "Provide auth",
+    "url": "https://github.com/Mominadar/nodebb-plugin-mega",
+    "library": "./library.js",
+    "hooks": [{
+            "hook": "response:user.auth",
+            "method": "auth"
+        },
+        {
+            "hook": "action:check.action",
+            "method": "check"
+        }
+    ]
+}
